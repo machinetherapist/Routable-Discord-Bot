@@ -1,4 +1,5 @@
 const Discord = require('discord.js')
+
 class Monitor {
   constructor(token) {
     this.token = token;
@@ -6,7 +7,7 @@ class Monitor {
   }
 
   init(routes) {
-    bot.client.login(this.token);
+    this.client.login(this.token);
     this.routes = routes
   }
 
