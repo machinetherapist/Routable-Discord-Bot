@@ -7,25 +7,19 @@ var routes = [
   {
     state: 1,
     prefix: "add",
-    action: function(steamId, discordId) {
+    action: function(steamId, discordId, req) {
       console.log(steamId, discordId);
     }
   },
   {
     state: 1,
     prefix: "remove",
-    action: function(steamId, discordId) {
+    action: function(steamId, discordId, req) {
       console.log(steamId, discordId);
-    }
-  },
-  {
-    state: 1,
-    prefix: "find",
-    action: function(idendity) {
-      console.log(idendity)
+      req.reply(steamId)
     }
   }
-
+ 
 ]
 
 bot.init(routes)
