@@ -27,10 +27,12 @@ class Monitor {
         }
 
         // invoke action
-        this.routes[item].action(...reqAssembly)
+        this.routes[item].action(...reqAssembly, this.req)
       }
     }
+
   }
+
 }
 
 module.exports = Monitor
