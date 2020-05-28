@@ -1,3 +1,4 @@
+const Discord = require('discord.js')
 class Monitor {
   constructor(token) {
     this.token = token;
